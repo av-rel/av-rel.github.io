@@ -1,5 +1,5 @@
 #Hello World
 
-##This site is to be developed by me
+##This site is to be developed
 
 ###So, need some time
