@@ -1,5 +1,3 @@
-Hello World
+This is a site in development for betterment of the life of noob programmers
 
-This site is to be developed
-
-So, need some time
+-Thank you
