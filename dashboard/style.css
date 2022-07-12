@@ -68,19 +68,6 @@ summary{
     background-color: green;
 }
 
-footer{
-    color: #00A3FF;
-    font-family: cursive;
-    position: absolute;
-    left: 1;
-    right: 0;
-    bottom: 0;
-    margin: 1vh;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
 
 @media screen and (max-width: 320px){
     header ul li{margin: 10px 0;}
