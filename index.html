@@ -1,69 +1,72 @@
-<!doctype html>
-<html>
-
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <meta name="keywords" content=".npl, Avrel, avrel.ml, programming language, new programming language" />
-    <meta name="description"
-        content="The official new programming language .npl is upcoming and releasing soon for the betterment and advancement of programmers" />
-    <meta name="author" content="Avrel" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Avrel</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta name="author" content="Avrel3" />
 
-    <title>Home</title>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6970405547795588"
-     crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/responsive.css" />
+    <script src="lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <script src="assets/script.js"></script>
-</head>
+    <!-- <script src="lib/mmd.min.js"></script> -->
+  </head>
 
-<body>
-
-    <div class="body">
-
-        <h1>
-            <a href="./"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;avrel.ml</a>
-            <span>
-                <a href="./about"><i class="fa fa-user" aria-hidden="true"></i></a>
-            </span>
-        </h1>
-        <hr>
-
-        <h1 id="header">Upcoming: </h1>
-        <div id="project">
-            <section>
-                <h2>#1 .npl</h2><br>
-                <p>.npl is an upcoming programming language being under development for the advancement and betterment
-                    in programming<br><br><a href="assets/README.7z">Download</a></p>
-            </section>
+  <body>
+    <div class="container-fluid">
+      <nav
+        class="navbar sticky-top navbar-light bg-light justify-content-between"
+      >
+        <div class="icon">
+          <a target="_blank" id="github">
+            <img src="assets/github.svg" alt="github" />
+          </a>
+          &nbsp;
+          <a target="_blank" id="npmjs">
+            <img src="assets/npmjs.svg" alt="npmjs" />
+          </a>
         </div>
-
-        <section class="box">
-            <a href="assets/README.7z" id="explore">Download</a>
-        </section>
-
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6970405547795588"
-            crossorigin="anonymous"></script>
-        <!-- Ad++ -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6970405547795588"
-            data-ad-slot="2738459695" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
+        <p class="text-end">
+          <img src="assets/git.svg" alt="git" />
+          <span id="count"></span>
+        </p>
+        <!-- <div class="inline">
+          <input
+            id="search"
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div> -->
+      </nav>
+      <div id="root">
+        <div class="container-fluid">
+          <ul id="projects" class="list-unstyled"></ul>
+          <!-- <ul id="result" class="list-unstyled"></ul> -->
+        </div>
+      </div>
     </div>
+    <style>
+      a {
+        text-decoration: none;
+      }
 
-</body>
-<footer><a href="policy.html">Privacy Policy</a>&emsp;<a href="terms.html">Terms &amp;
-        Conditions</a>&emsp;<span>&copy;&nbsp;
-        <script>document.write(new Date().getUTCFullYear())</script>
-    </span></footer>
-
+      #github,
+      #npmjs
+      /* 
+      ,.repos  */ {
+        cursor: pointer;
+      }
+    </style>
+  </body>
 </html>
