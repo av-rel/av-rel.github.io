@@ -24,9 +24,8 @@ $(document).ready(function () {
           val.repo = val.repo.replace('-avrel3-', '')
           link = `https://npmjs.com/package/@${slf.toLowerCase()}/${val.repo}`
         } else link = `https://npmjs.com/package/${val.repo}`
-      }else if (val.type == 'site'){
-        link = val.link;
-      }
+      }else if (val.type == 'site') link = "https://"+val.repo
+      
       $('#projects').append(
         `<li class="repos">
         <div class="card border-dark mt-4"><div class="card-body"><h5 class="card-title">${val.repo}<span><i class="devicon-${val.lang}-plain colored"/></i></span></h5><p class="card-text">${val.desc}
