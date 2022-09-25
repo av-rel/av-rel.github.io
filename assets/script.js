@@ -1,5 +1,5 @@
 const slf = 'Avrel3'
-const inc = `https://raw.githubusercontent.com/${slf}/${slf}/static/include.json`
+const inc = `https://raw.githubusercontent.com/${slf}/${slf}/main/include.json`
 const git = `https://github.com/${slf}`
 const npm = `https://npmjs.com/~${slf.toLowerCase()}`
 
