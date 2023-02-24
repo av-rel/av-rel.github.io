@@ -1,0 +1,10 @@
+[book]
+author = "Av-rel"
+language = "en"
+multilingual = false
+src = "src"
+title = ""
+description = "Personal Website"
+
+[output.html]
+favicon = "./assets/favicon.ico"
