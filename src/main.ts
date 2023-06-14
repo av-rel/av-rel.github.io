@@ -3,15 +3,14 @@ import FourOhFour from "./404.js";
 
 const router = rotero();
 
-router.on("/", (req, res) => {
+router.on("", (req, res) => {
     res.title = "Home";
     res.send("<h1>Home</h1>")
 });
 
 router.on("/:page", (req, res) => {
-    let page = req.params.get("page") as string;
-    res.title = page;
-    res.body = `<h1>Hello ${page}</h1>`
+    res.title = req.params.get("page") as string;
+    res.body = `<h1>Hello ${res.title}</h1>`
 })
 
 router.all = FourOhFour;
