@@ -1,0 +1,24 @@
+{
+  "name": "rotero",
+  "version": "1.1.0",
+  "description": "SPA hash routing for Vanilla.js",
+  "license": "MIT",
+  "main": "rotero.js",
+  "types": "rotero.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare" : "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "4.9.5"
+  },
+  "author": "https://github.com/av-rel/rotero",
+  "homepage": "https://github.com/av-rel/rotero#readme",
+  "keywords": [
+    "Vanilla",
+    "Javascript",
+    "SPA",
+    "Hash",
+    "Router"
+  ]
+}
