@@ -1,2 +1,7 @@
-*.d.ts
-*.map
+node_modules
+build
+dist
+.cache
+.parcel-cache
+.env
+.env.*
