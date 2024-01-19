@@ -1,0 +1,94 @@
+
+$nav-ht : 3.14rem;
+$nav-clr: #010101;
+$nav-bg: #ededed;
+
+$thumb-clr: #888;
+$track-clr: #f1f1f1;
+
+$main-clr: #fefefe;
+$main-bg: #2c2c38;
+
+@mixin Button($text-color, $bg-color) {
+	border-radius: 8px;
+	padding: 0.5rem 0.75rem;
+	color: $text-color;
+    background-color: $bg-color;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+	&:hover {
+		opacity: 75%;
+	}
+}
+
+
+html {
+	color: $main-clr;
+	background-color: $main-bg;
+}
+
+html::-webkit-scrollbar {
+	width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+	background: $track-clr;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: $thumb-clr;
+	border-radius: 10px;
+}
+
+header {
+	z-index: 1;
+	user-select: none;
+	width: 100%;
+	height: $nav-ht;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.25rem;
+	background-color: $nav-bg;
+	color: $nav-clr;
+	box-shadow: 10px 0 10px #000;
+
+	nav {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 1.4rem;
+
+		a {
+			padding: 0.25rem;
+
+			&:hover {
+				opacity: 69%;
+			}
+		}
+
+	}
+
+	.rizume {
+		@include Button(white, red);
+	}
+}
+
+main {
+	$offset: 1rem;
+
+	width: 85%;
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: calc($nav-ht + $offset) 0 $offset 0;
+}
+
+@media (max-width: 512px) {
+	body {
+		font-size: 16px;
+	}
+
+	.navbar {
+		display: none;
+	}
+}

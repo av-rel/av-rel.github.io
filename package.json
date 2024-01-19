@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.11.0"
+  },
+  "scripts": {
+    "dev": "parcel serve index.html",
+    "build": "parcel build index.html --no-cache --no-source-maps --public-url . --dist-dir docs"
+  }
+}
